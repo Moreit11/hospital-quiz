@@ -1,2 +1,4 @@
 # hospital-quiz
-HTML &amp; CSS Quiz app
+HTML CSS & JS App for hospital
+## Stack
+This app uses tailwind JavaScript

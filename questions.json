@@ -1,0 +1,52 @@
+[
+    {
+        "question": "What planet do we live on?",
+        "choices": [
+            "Mars",
+            "Earth",
+            "Jupiter",
+            "Venus"
+        ],
+        "correct_answer": "Earth"
+    },
+    {
+        "question": "Which animal is known as the King of the Jungle?",
+        "choices": [
+            "Elephant",
+            "Tiger",
+            "Lion",
+            "Giraffe"
+        ],
+        "correct_answer": "Lion"
+    },
+    {
+        "question": "What is the capital of France?",
+        "choices": [
+            "Berlin",
+            "Madrid",
+            "Paris",
+            "Rome"
+        ],
+        "correct_answer": "Paris"
+    },
+    {
+        "question": "How many legs does a spider have?",
+        "choices": [
+            "6",
+            "8",
+            "10",
+            "12"
+        ],
+        "correct_answer": "8"
+    },
+    {
+        "question": "Which color do you get when you mix red and blue?",
+        "choices": [
+            "Green",
+            "Purple",
+            "Orange",
+            "Brown"
+        ],
+        "correct_answer": "Purple"
+    }
+]
