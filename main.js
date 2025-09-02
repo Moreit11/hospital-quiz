@@ -1,3 +1,4 @@
+console.log("main.js loaded")
 const quizData = [
   {
     question: "What planet do we live on?",
