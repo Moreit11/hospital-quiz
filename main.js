@@ -1,4 +1,3 @@
-console.log("main.js loaded")
 const quizData = [
   {
     question: "What planet do we live on?",
@@ -29,6 +28,7 @@ const quizData = [
 
 const form = document.getElementById("quiz");
 
+// Create fieldsets for each question
 quizData.forEach((item, index) => {
   const fieldset = document.createElement("fieldset");
   fieldset.setAttribute("aria-labelledby", `question-${index}`);
@@ -57,4 +57,27 @@ quizData.forEach((item, index) => {
   });
 
   form.appendChild(fieldset);
+});
+
+// Append submit button
+const submitBtn = document.createElement("input");
+submitBtn.type = "submit";
+submitBtn.value = "Submit Quiz";
+form.appendChild(submitBtn);
+
+// Handle scoring
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent page reload
+
+  let score = 0;
+
+  quizData.forEach((item, index) => {
+    const selected = form.querySelector(`input[name="question-${index}"]:checked`);
+    if (selected && selected.value === item.correct_answer) {
+      score++;
+    }
+  });
+
+  // Display result
+  alert(`You scored ${score} out of ${quizData.length}!`);
 });
